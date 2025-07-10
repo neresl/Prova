@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Site de Carros</title>
-  <link rel="stylesheet" href="css/estilo.css">
-  <link rel="shortcut icon" href="img/image-removebg-preview.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de Carros</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/image-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
-  
-   
-  </audio>
-  <header class="header">
-    <div class="logo">
-      <img src="img/image-removebg-preview.png" alt="Logo MeuCarro">
-      <h1>seja bem vindo</h1>
-      <audio id="meuAudio"controls>
-        <source src="audio/02 - 02 Melo de Igor CaioDaMidiaOriginal_62385400.mp3" type="audio/mpeg">
+    <header class="header">
+        <div class="logo">
+            <img src="img/image-removebg-preview.png" alt="Logo MeuCarro">
+            <h1>Seja Bem Vindo</h1>
+        </div>
+        <audio id="meuAudio" controls>
+            <source src="audio/02 - 02 Melo de Igor CaioDaMidiaOriginal_62385400.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar"> 
+            <a href="index.html">Home</a>
+            <a href="pages/catalogo.html">Catálogo</a>
+            <a href="pages/ofertas.html">Ofertas</a>
+            <a href="pages/contato.html">Contato</a>
+        </nav>
+
+        <main class="main">
+            <div class="sub-header">
+                <h2>Destaques</h2>
+            </div>
+            <div class="content">
+                <img src="img/D_NQ_NP_646384-MLB74178251683_012024-O.webp" alt="Carro em destaque" class="car-img">
+                <p class="car-description">Este é o novo modelo esportivo 2025 — design moderno, motor turbo, alta performance e tecnologia embarcada. Aproveite as condições especiais!</p>
+            </div>
+        </main>
     </div>
-  </header>
 
-  <div class="container">
-    <nav class="sidebar"> 
-      <a href="index.html">Home</a>
-      <a href="pages/catalogo.html">Catálogo</a>
-      <a href="pages/ofertas.html">Ofertas</a>
-      <a href="pages/contato.html">Contato</a>
-     
-    </nav>
-
-    <main class="main">
-      <div class="sub-header">
-        <h2>Destaques</h2>
-      </div>
-      <div class="content">
-        <img src="img/D_NQ_NP_646384-MLB74178251683_012024-O.webp" alt="Carro em destaque" class="car-img">
-        <p class="car-description">Este é o novo modelo esportivo 2025 — design moderno, motor turbo, alta performance e tecnologia embarcada. Aproveite as condições especiais!</p>
-      </div>
-    </main>
-  </div>
-
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
-  
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>
-
-
