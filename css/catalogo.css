@@ -32,7 +32,7 @@
   }
 
   .sidebar {
-    background-color: #da49e6;
+    background-color: #fbceff;
     width: 200px;
     padding: 20px;
     color: white;
@@ -55,7 +55,7 @@
 
   .main {
     flex: 1;
-    background-color: #e1bdf7;
+    background-color: #e5c7f8;
     display: flex;
     flex-direction: column;
   }

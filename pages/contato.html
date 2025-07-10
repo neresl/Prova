@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Speed Motors</title>
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="shortcut icon" href="../img/image-removebg-preview.png" type="image/x-icon">
+    
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="../img/image-removebg-preview.png" alt="Logo Speed Motors - Design moderno com formas aerodinâmicas em azul escuro e detalhes em azul claro">
+            <div class="logo-text">
+                <h1>Speed Motors</h1>
+                <span>Excelência em automóveis</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="catalogo.html"><i class="fas fa-car"></i> Catálogo</a>
+                <a href="ofertas.html"><i class="fas fa-tag"></i> Ofertas</a>
+                <a href="contato.html" class="active"><i class="fas fa-envelope"></i> Contato</a>
+            </nav>
+        </div>
+
+        <main class="main-content">
+            <h1 class="page-title">Fale Conosco</h1>
+            
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione...</option>
+                            <option value="vendas">Informações sobre veículos</option>
+                            <option value="financiamento">Financiamento</option>
+                            <option value="revisao">Agendamento de revisão</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width" style="text-align: center;">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="info-box">
+                        <h3><i class="fas fa-map-marker-alt"></i> Nossa Localização</h3>
+                        <p>Avenida Automotiva, 1234</p>
+                        <p>Bairro Veloz - São Paulo/SP</p>
+                        <p>CEP: 01234-567</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3><i class="fas fa-phone-alt"></i> Telefones</h3>
+                        <p>Vendas: (11) 9876-5432</p>
+                        <p>Revisões: (11) 9876-5433</p>
+                        <p>Financeiro: (11) 9876-5434</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3><i class="fas fa-clock"></i> Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 8h às 18h</p>
+                        <p>Sábado: 8h às 14h</p>
+                        <p>Domingo: Fechado</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Speed Motors. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('neresl419@gmail.com').value;
+            const assunto = document.getElementById('assunto').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            if (!nome || !email || !assunto || !mensagem) {
+                e.preventDefault();
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            } else {
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            }
+        });
+    </script>
+</body>
+</html>
